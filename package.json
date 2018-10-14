@@ -12,7 +12,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "ng": "ng"
+    "ng": "ng",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@angular/animations": "^4.4.3",
@@ -27,22 +29,23 @@
     "@angular/platform-browser-dynamic": "^4.4.3",
     "@angular/router": "^4.4.3",
     "bcrypt-node": "^0.1.0",
-    "body-parser": "^1.18.1",
+    "body-parser": "^1.18.2",
     "chalk": "^2.1.0",
-    "compression": "^1.6.2",
+    "compression": "^1.7.1",
     "core-js": "^2.4.1",
     "dotenv": "^4.0.0",
     "errorhandler": "^1.4.3",
-    "express": "^4.14.0",
+    "express": "^4.16.0",
     "express-jwt": "^5.3.0",
     "express-validator": "^4.2.0",
-    "helmet": "^3.8.0",
+    "helmet": "^3.8.2",
     "jsonwebtoken": "^8.0.1",
-    "mongoose": "^4.11.12",
-    "morgan": "^1.7.0",
+    "mongoose": "^4.11.14",
+    "morgan": "^1.9.0",
     "passport-local": "^1.0.0",
     "rxjs": "^5.4.1",
-    "zone.js": "^0.8.14"
+    "zone.js": "^0.8.14",
+    "snyk": "^1.103.4"
   },
   "devDependencies": {
     "@angular/cli": "^1.4.2",
@@ -66,5 +69,6 @@
     "ts-node": "^3.3.0",
     "tslint": "^5.7.0",
     "typescript": "^2.5.2"
-  }
+  },
+  "snyk": true
 }
